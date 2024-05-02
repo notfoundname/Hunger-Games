@@ -55,7 +55,7 @@ spectate:
   no-player: "&c没有玩家可以传送！"
   not-spectator: "&c您不是观众！"
   gui-message: "&b传送到玩家"
-  message: "&d使用/spectate观看玩家"
+  message: "&d使用/hg spectate观看玩家"
 
 startgame:
   min-players: "&c开始游戏至少需要%d名玩家！"

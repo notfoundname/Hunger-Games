@@ -2,6 +2,8 @@ time-remaining: "&eTime remaining"
 no-permission: "&cYou do not have permission to run this command"
 no-server: "&cThis command can only be executed by players"
 config-reloaded: "&aConfig has been reloaded"
+unknown-subcommand: "&cUnknown subcommand"
+usage: "Usage: /hg <subcommand> [args]"
 
 arena:
   stick-name: "&aArena Selector"
@@ -55,7 +57,7 @@ spectate:
   no-player: "&cNo players to teleport to!"
   not-spectator: "&cYou are not a spectator!"
   gui-message: "&bTeleport to player"
-  message: "&dSpectate players with /spectate"
+  message: "&dSpectate players with /hg spectate"
 
 startgame:
   min-players: "&cThere must be at least %d players to start the game!"

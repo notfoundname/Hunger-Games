@@ -55,7 +55,7 @@ spectate:
   no-player: "&cPas de joueurs à téléporter!"
   not-spectator: "&cVous n'êtes pas un spectateur!"
   gui-message: "&bTéléporter au joueur"
-  message: "&dObserver les joueurs avec /spectate"
+  message: "&dObserver les joueurs avec /hg spectate"
 
 startgame:
   min-players: "&cIl doit y avoir au moins %d joueurs pour commencer le jeu!"

@@ -151,7 +151,6 @@ public class SetSpawnHandler implements Listener {
                             plugin.loadLanguageConfig(onlinePlayer);
                             onlinePlayer.sendMessage(ChatColor.GREEN + player.getName() + ChatColor.GRAY + plugin.getMessage("setspawnhandler.joined-message-1") + ChatColor.DARK_GREEN + plugin.getMessage("setspawnhandler.joined-message-2") + occupiedSpawnPoints.size() + plugin.getMessage("setspawnhandler.joined-message-3") + spawnPoints.size() + plugin.getMessage("setspawnhandler.joined-message-4"));
                         }
-                        playerSpawnPoints.put(player, spawnPoint);
                     } else {
                         player.sendMessage(ChatColor.RED + plugin.getMessage("setspawnhandler.spawn-filled"));
                     }
@@ -164,6 +163,10 @@ public class SetSpawnHandler implements Listener {
         plugin.loadLanguageConfig(player);
         if (plugin.gameStarted) {
             player.sendMessage(ChatColor.RED + plugin.getMessage("setspawnhandler.game-started"));
+            return false;
+        }
+        if (playerSpawnPoints.containsKey(player)) {
+            player.sendMessage(plugin.getMessage("join.already-joined"));
             return false;
         }
         playerSignClickManager.setPlayerSignClicked(player, true);
@@ -193,6 +196,16 @@ public class SetSpawnHandler implements Listener {
                 onlinePlayer.sendMessage(ChatColor.GREEN + player.getName() + ChatColor.GRAY + plugin.getMessage("setspawnhandler.joined-message-1") + ChatColor.DARK_GREEN + plugin.getMessage("setspawnhandler.joined-message-2") + occupiedSpawnPoints.size() + plugin.getMessage("setspawnhandler.joined-message-3") + spawnPoints.size() + plugin.getMessage("setspawnhandler.joined-message-4"));
             }
             playerSpawnPoints.put(player, spawnPoint);
+            boolean autoStart = plugin.getConfig().getBoolean("auto-start.enabled");
+            if (autoStart) {
+                int numStartPlayers = plugin.getConfig().getInt("auto-start.players");
+                System.out.println("NumStartPlayers" + numStartPlayers);
+                System.out.println("OccupiedSpawnPoints" + occupiedSpawnPoints.size());
+                if (occupiedSpawnPoints.size() >= numStartPlayers) {
+                    System.out.println("this is it");
+                    plugin.getServer().dispatchCommand(plugin.getServer().getConsoleSender(), "hg start");
+                }
+            }
             return true;
         } else {
             player.sendMessage(ChatColor.RED + plugin.getMessage("setspawnhandler.spawn-filled"));

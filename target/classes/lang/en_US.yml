@@ -55,7 +55,7 @@ spectate:
   no-player: "&cNo players to teleport to!"
   not-spectator: "&cYou are not a spectator!"
   gui-message: "&bTeleport to player"
-  message: "&dSpectate players with /spectate"
+  message: "&dSpectate players with /hg spectate"
 
 startgame:
   min-players: "&cThere must be at least %d players to start the game!"

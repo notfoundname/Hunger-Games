@@ -55,7 +55,7 @@ spectate:
   no-player: "&c¡No hay jugadores a los que teletransportarse!"
   not-spectator: "&c¡No eres un espectador!"
   gui-message: "&bTeletransportarse al jugador"
-  message: "&dEspectar jugadores con /spectate"
+  message: "&dEspectar jugadores con /hg spectate"
 
 startgame:
   min-players: "&c¡Debe haber al menos %d jugadores para comenzar el juego!"

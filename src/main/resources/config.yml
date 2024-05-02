@@ -14,6 +14,8 @@ min-supply-drop-content: 2
 max-supply-drop-content: 6
 # Show supplydrops coords in scoreboard
 show-supplydrop: true
+# Players Per Team
+players-per-team: 1
 # Length of the game in seconds (default: 900)
 game-time: 900
 # Length of the grace period (time after which PvP is enabled) in seconds, use 0 for no grace period,(default: 30)
@@ -24,6 +26,9 @@ supplydrop:
 # Interval of chests being refilled in seconds, use any time higher than game-time for no chestrefills, (default: 600)
 chestrefill:
   interval: 180
+auto-start:
+  enabled: false
+  players: 4
 # Minimum number of players in a game, default is 2
 min-players: 2
 # Maximum number of players in a game, default is 24

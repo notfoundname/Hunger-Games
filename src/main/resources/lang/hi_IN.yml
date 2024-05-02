@@ -2,6 +2,8 @@ time-remaining: "&eबचा हुआ समय"
 no-permission: "&cआपके पास इस कमांड को चलाने की अनुमति नहीं है"
 no-server: "&cयह कमांड केवल खिलाड़ियों द्वारा निष्पादित की जा सकती है"
 config-reloaded: "&aकॉन्फ़िगरेशन फिर से लोड की गई है"
+unknown-subcommand: "&cअज्ञात उप-कमांड"
+usage: "उपयोग: /hg <उप-कमांड> [args]"
 
 arena:
   stick-name: "&aएरीना चयनकर्ता"
@@ -55,7 +57,7 @@ spectate:
   no-player: "&cकोई खिलाड़ी नहीं है जिसे टेलीपोर्ट किया जा सके!"
   not-spectator: "&cआप दर्शक नहीं हैं!"
   gui-message: "&bखिलाड़ी के पास टेलीपोर्ट करें"
-  message: "&dखिलाड़ियों को /spectate के साथ देखें"
+  message: "&dखिलाड़ियों को /hg spectate के साथ देखें"
 
 startgame:
   min-players: "&cखेल शुरू करने के लिए कम से कम %d खिलाड़ी होने चाहिए!"

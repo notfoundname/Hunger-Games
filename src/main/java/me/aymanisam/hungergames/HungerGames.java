@@ -31,7 +31,7 @@ public final class HungerGames extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        int pluginId = 21508;
+        int pluginId = 21512;
         Metrics metrics = new Metrics(this, pluginId);
 
         this.getLogger().info("This plugin uses bStats to collect anonymous data about servers using this plugin. This data helps improve the plugin and is not shared with third parties.");
@@ -164,7 +164,7 @@ public final class HungerGames extends JavaPlugin {
         for (String key : keys) {
             if (!serverConfig.contains(key)) {
                 serverConfig.set(key, pluginConfig.get(key));
-                System.out.println("&cMissing key: " + key);
+                this.getLogger().warning("&cMissing key: " + key);
             }
         }
 

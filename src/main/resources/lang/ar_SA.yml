@@ -2,6 +2,8 @@ time-remaining: "&eالوقت المتبقي"
 no-permission: "&cليس لديك الإذن لتشغيل هذا الأمر"
 no-server: "&cهذا الأمر يمكن تنفيذه فقط بواسطة اللاعبين"
 config-reloaded: "&aتم إعادة تحميل التكوين"
+unknown-subcommand: "&cأمر فرعي غير معروف"
+usage: "الاستخدام: /hg <الأمر الفرعي> [الوسائط]"
 
 arena:
   stick-name: "&aمحدد الساحة"
@@ -55,7 +57,7 @@ spectate:
   no-player: "&cلا يوجد لاعبين للانتقال إليهم!"
   not-spectator: "&cأنت لست مشاهدًا!"
   gui-message: "&bانتقل إلى اللاعب"
-  message: "&dشاهد اللاعبين مع /spectate"
+  message: "&dشاهد اللاعبين مع /hg spectate"
 
 startgame:
   min-players: "&cيجب أن يكون هناك على الأقل %d لاعبين لبدء اللعبة!"

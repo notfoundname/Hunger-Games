@@ -55,7 +55,7 @@ spectate:
   no-player: "&cلا يوجد لاعبين للانتقال إليهم!"
   not-spectator: "&cأنت لست مشاهدًا!"
   gui-message: "&bانتقل إلى اللاعب"
-  message: "&dشاهد اللاعبين مع /spectate"
+  message: "&dشاهد اللاعبين مع /hg spectate"
 
 startgame:
   min-players: "&cيجب أن يكون هناك على الأقل %d لاعبين لبدء اللعبة!"

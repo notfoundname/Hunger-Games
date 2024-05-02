@@ -34,7 +34,7 @@ public class SpectateCommand implements CommandExecutor {
                     Sender.sendMessage(plugin.getMessage("spectate.not-spectator"));
                 }
             } else {
-                Sender.sendMessage(plugin.getMessage("spectate.no-server"));
+                Sender.sendMessage(plugin.getMessage("no-server"));
             }
         return true;
     }

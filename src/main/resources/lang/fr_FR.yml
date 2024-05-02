@@ -2,6 +2,8 @@ time-remaining: "&eTemps restant"
 no-permission: "&cVous n'avez pas la permission d'exécuter cette commande"
 no-server: "&cCette commande ne peut être exécutée que par les joueurs"
 config-reloaded: "&aConfiguration rechargée"
+unknown-subcommand: "&cSous-commande inconnue"
+usage: "Utilisation : /hg <sous-commande> [args]"
 
 arena:
   stick-name: "&aSélecteur d'arène"
@@ -55,7 +57,7 @@ spectate:
   no-player: "&cPas de joueurs à téléporter!"
   not-spectator: "&cVous n'êtes pas un spectateur!"
   gui-message: "&bTéléporter au joueur"
-  message: "&dObserver les joueurs avec /spectate"
+  message: "&dObserver les joueurs avec /hg spectate"
 
 startgame:
   min-players: "&cIl doit y avoir au moins %d joueurs pour commencer le jeu!"

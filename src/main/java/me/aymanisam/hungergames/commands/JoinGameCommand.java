@@ -15,7 +15,6 @@ public class JoinGameCommand implements CommandExecutor {
     private final HungerGames plugin;
     private final SetSpawnHandler setSpawnHandler;
     private final Set<Player> playersInGame;
-    private final Logger logger = Logger.getLogger(JoinGameCommand.class.getName());
 
     public JoinGameCommand(HungerGames plugin, SetSpawnHandler setSpawnHandler) {
         this.plugin = plugin;

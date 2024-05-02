@@ -2,6 +2,8 @@ time-remaining: "&eОсталось времени"
 no-permission: "&cУ вас недостаточно прав для использования команды"
 no-server: "&cЭта команда может быть выполнена только игроками"
 config-reloaded: "&aКонфигурация перезагружена"
+unknown-subcommand: "&cНеизвестная подкоманда"
+usage: "Использование: /hg <подкоманда> [args]"
 
 arena:
   stick-name: "&aВыборщик Арены"
@@ -55,7 +57,7 @@ spectate:
   no-player: "&cНе к кому телепортироваться!"
   not-spectator: "&cВы не наблюдатель!"
   gui-message: "&bТелепорт к игроку"
-  message: "&dНаблюдайте за игроками с помощью /spectate"
+  message: "&dНаблюдайте за игроками с помощью /hg spectate"
 
 startgame:
   min-players: "&cНужно как минимум %d игроков для начала игры!"

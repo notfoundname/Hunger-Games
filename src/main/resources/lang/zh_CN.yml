@@ -2,6 +2,8 @@ time-remaining: "&e剩余时间"
 no-permission: "&c您没有权限执行此命令"
 no-server: "&c此命令只能由玩家执行"
 config-reloaded: "&a配置已重新加载"
+unknown-subcommand: "&c未知的子命令"
+usage: "用法：/hg <子命令> [参数]"
 
 arena:
   stick-name: "&a竞技场选择器"
@@ -55,7 +57,7 @@ spectate:
   no-player: "&c没有玩家可以传送！"
   not-spectator: "&c您不是观众！"
   gui-message: "&b传送到玩家"
-  message: "&d使用/spectate观看玩家"
+  message: "&d使用/hg spectate观看玩家"
 
 startgame:
   min-players: "&c开始游戏至少需要%d名玩家！"
