@@ -1,0 +1,33 @@
+name: Java with Gradle
+
+on:
+  push:
+    branches: [ main ]
+
+env:
+  BUILD_NUMBER: "${{ github.run_number }}"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'gradle'
+      - name: Allow gradlew to execute
+        run: chmod +x gradlew
+      - name: Build with Gradle
+        run: ./gradlew
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: "HungerGames-${{ env.BUILD_NUMBER }}"
+          path: plugin/build/libs/*-all.jar

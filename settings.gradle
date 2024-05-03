@@ -1,0 +1,3 @@
+rootProject.name = "HungerGames"
+include "HungerGames-Plugin"
+project(":HungerGames-Plugin").projectDir = file("plugin")

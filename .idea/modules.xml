@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HungerGames.iml" filepath="$PROJECT_DIR$/HungerGames.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugin/HungerGames.HungerGames-Plugin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/plugin/HungerGames.HungerGames-Plugin.main.iml" />
     </modules>
   </component>
 </project>

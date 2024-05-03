@@ -1,0 +1,27 @@
+plugins {
+    id "com.github.johnrengelman.shadow" version "${SHADOW_VERSION}" apply false
+}
+
+defaultTasks "clean", "build", "shadowJar"
+
+allprojects {
+    group = "${GROUP}"
+    version = "${VERSION}-${System.getenv("BUILD_NUMBER") ?: "null"}"
+}
+
+subprojects {
+    apply plugin: "java"
+    repositories {
+        mavenCentral()
+        maven { url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/" }
+        maven { url "https://oss.sonatype.org/content/groups/public/" }
+    }
+
+    dependencies {
+        compileOnly "org.spigotmc:spigot-api:${SPIGOT_API_VERSION}"
+        compileOnly "org.jetbrains:annotations:${ANNOTATIONS_VERSION}"
+    }
+
+    java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+    compileJava.options.encoding = "UTF-8"
+}

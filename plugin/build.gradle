@@ -1,0 +1,18 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
+apply plugin: "com.github.johnrengelman.shadow"
+
+processResources {
+    filter ReplaceTokens, tokens: [
+        "version" : VERSION,
+        "group" : GROUP
+    ]
+}
+
+dependencies {
+    implementation "org.bstats:bstats-bukkit:${BSTATS_BUKKIT_VERSION}"
+}
+
+shadowJar {
+    relocate "org.bstats", "${GROUP}.bstats"
+}
