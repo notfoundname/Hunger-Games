@@ -2,6 +2,8 @@ time-remaining: "&eالوقت المتبقي"
 no-permission: "&cليس لديك الإذن لتشغيل هذا الأمر"
 no-server: "&cهذا الأمر يمكن تنفيذه فقط بواسطة اللاعبين"
 config-reloaded: "&aتم إعادة تحميل التكوين"
+unknown-subcommand: "&cأمر فرعي غير معروف"
+usage: "الاستخدام: /hg <الأمر الفرعي> [الوسائط]"
 
 arena:
   stick-name: "&aمحدد الساحة"

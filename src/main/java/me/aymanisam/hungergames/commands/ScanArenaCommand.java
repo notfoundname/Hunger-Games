@@ -94,6 +94,10 @@ public class ScanArenaCommand implements CommandExecutor {
                     }
                 }
 
+                player.sendMessage(plugin.getMessage("scanarena.found-chests") + chestLocations.size());
+                player.sendMessage(plugin.getMessage("scanarena.found-barrels") + barrelLocations.size());
+                player.sendMessage(plugin.getMessage("scanarena.found-trapped-chests") + trappedChestLocations.size());
+
                 FileConfiguration chestLocationsConfig = new YamlConfiguration();
                 chestLocationsConfig.set("locations", chestLocations.stream()
                         .map(Location::serialize)

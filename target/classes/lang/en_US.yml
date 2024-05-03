@@ -2,6 +2,8 @@ time-remaining: "&eTime remaining"
 no-permission: "&cYou do not have permission to run this command"
 no-server: "&cThis command can only be executed by players"
 config-reloaded: "&aConfig has been reloaded"
+unknown-subcommand: "&cUnknown subcommand"
+usage: "Usage: /hg <subcommand> [args]"
 
 arena:
   stick-name: "&aArena Selector"
@@ -44,6 +46,9 @@ scanarena:
   region-undef: "&cThe area region is not defined in the config."
   saved-locations: "&aChest locations have been saved."
   failed-locations: "&cCould not save chest locations to file!"
+  found-chests: "&aNumber of chests scanned: "
+  found-barrels: "&aNumber of barrels scanned: "
+  found-trapped-chests: "&aNumber of trapped chests scanned: "
 
 setspawn:
   stick-name: "&bSpawn Point Selector."

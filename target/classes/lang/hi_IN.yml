@@ -2,6 +2,8 @@ time-remaining: "&eबचा हुआ समय"
 no-permission: "&cआपके पास इस कमांड को चलाने की अनुमति नहीं है"
 no-server: "&cयह कमांड केवल खिलाड़ियों द्वारा निष्पादित की जा सकती है"
 config-reloaded: "&aकॉन्फ़िगरेशन फिर से लोड की गई है"
+unknown-subcommand: "&cअज्ञात उप-कमांड"
+usage: "उपयोग: /hg <उप-कमांड> [args]"
 
 arena:
   stick-name: "&aएरीना चयनकर्ता"

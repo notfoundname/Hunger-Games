@@ -2,6 +2,8 @@ time-remaining: "&eTemps restant"
 no-permission: "&cVous n'avez pas la permission d'exécuter cette commande"
 no-server: "&cCette commande ne peut être exécutée que par les joueurs"
 config-reloaded: "&aConfiguration rechargée"
+unknown-subcommand: "&cSous-commande inconnue"
+usage: "Utilisation : /hg <sous-commande> [args]"
 
 arena:
   stick-name: "&aSélecteur d'arène"

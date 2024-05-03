@@ -46,6 +46,9 @@ scanarena:
   region-undef: "&cThe area region is not defined in the config."
   saved-locations: "&aChest locations have been saved."
   failed-locations: "&cCould not save chest locations to file!"
+  found-chests: "&aNumber of &bchests&a scanned: &6"
+  found-barrels: "&aNumber of &bbarrels&a scanned: &6"
+  found-trapped-chests: "&aNumber of &btrapped chests&a scanned: &6"
 
 setspawn:
   stick-name: "&bSpawn Point Selector."
